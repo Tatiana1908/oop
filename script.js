@@ -216,8 +216,8 @@ class DOMINIT extends  parent{
         this.addBtn.addEventListener('click', () => {
             this.inputContent = this.parentBlock.querySelector('input').value;
             this.parentBlock.querySelector('input').value = '';
-            this.buildLI(this.card)
-            this.onCreate(inputContent)
+            this.buildLI(this.inputContent)
+            this.onCreate()
         })
     }
 
